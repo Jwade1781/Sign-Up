@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backpacking America</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="./styleReset.css">-->
 
     <script src="./main.js"></script>
@@ -15,37 +18,77 @@
 <body>
     <div class="layer1">
         <div class="container">
-            <div class="picture">
-                <h3>Start your journey</h3>
+            <div class="leftSide">
+                <div class="picture">
+                    <div class="logo">
+                        <h3>Start your journey</h3>
+                        <img src="../data/img/hikeLogo.png">
+                    </div>
+
+                </div>
             </div>
 
         </div>
 
         <div class="container">
-            <h4>This is not a real online service! You know you need something like this in your life to help you
-                realize your deepest dreams.</h4>
-            <h4>Sign up now to get Started</h4>
-            <h4>You know you want to.</h4>
-            <form class="signUpForm">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" minlength="1" required>
+            <div class="rightSide">
+                <h4>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.<br><br>Sign up now to get Started</h4>
+                <h4>You know you want to.</h4>
 
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="1" required>
+                <div class="container signUpContainer">
+                    <form class="signUpForm">
+                        <div class="leftInputs">
+                            <div class="inputs">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" minlength="1"
+                                    required>
+                            </div>
 
-                <label for="userEmail">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="getgoing@backpackamerica.com" required>
+                            <div class="inputs">
+                                <label for="userEmail">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="getgoing@backpackamerica.com"
+                                    required>
+                            </div>
 
-                <label for="userPassword">Password:</label>
-                <input type="password" id="password" name="password" placeholder="" minlength="8" required>
+                            <div class="inputs">
+                                <label for="userPassword">Password:</label>
+                                <input type="password" id="password" name="password" placeholder="" minlength="8"
+                                    required>
+                            </div>
+                        </div>
 
+                        <div class="rightInputs">
 
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="" minlength="8"
-                    required>
+                            <div class="inputs">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" minlength="1"
+                                    required>
+                            </div>
 
-                <button type="submit">Start your adventure!</button>
-            </form>
+                            <div class="inputs">
+                                <label for="userPhone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" placeholder="xxx xxx xxxx" minlength="8"
+                                    required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="xxx xxx xxxx">
+                            </div>
+
+                            <div class="inputs">
+                                <label for="confirmPassword">Confirm Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder=""
+                                    minlength="8" required>
+                            </div>
+                        </div>
+
+                        <div class="submitBtns">
+                            <button type="submit">Sign up</button>
+                        </div>
+
+                        <div class="submitBtns">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
 
